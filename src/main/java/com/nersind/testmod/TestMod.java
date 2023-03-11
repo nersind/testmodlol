@@ -1,6 +1,7 @@
 package com.nersind.testmod;
 
 import com.mojang.logging.LogUtils;
+import com.nersind.testmod.blocks.ModBlocks;
 import com.nersind.testmod.items.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -33,6 +34,7 @@ public class TestMod
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
