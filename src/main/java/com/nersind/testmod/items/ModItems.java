@@ -15,6 +15,15 @@ public class ModItems {
     public static final RegistryObject<Item> KORABLI = ITEMS.register("korabli",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SHITPOST_TAB)));
 
+//    public static final RegistryObject<Item> DOLEKOV_INGOT = ITEMS.register("dolekov_ingot",
+//            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SHITPOST_TAB)));
+
+//    public static final RegistryObject<Item> TENDO_INGOT = ITEMS.register("tendo_ingot",
+//           () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SHITPOST_TAB)));
+
+    public static final RegistryObject<Item> WAFFLE = ITEMS.register("waffle",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SHITPOST_TAB).food(ModFoods.WAFFLE)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

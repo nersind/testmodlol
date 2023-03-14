@@ -1,6 +1,9 @@
 {
   "item.testmod.korabli": "Корабли ахаха",
+  "item.testmod.waffle": "вафли",
   "block.testmod.dolekov_block": "ДААААЛЕКАФКА",
+  "block.testmod.waffle_block": "блок вафель",
+  "block.testmod.tendo_block": "блок Шихона Тендо",
 
   "itemGroup.shitposttab": "Щитпостище"
 }

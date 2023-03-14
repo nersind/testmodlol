@@ -21,8 +21,16 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MOD_ID);
 
     public  static final RegistryObject<Block> DOLEKOV_BLOCK = registerBlock("dolekov_block",
-        () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(0f)
-                .requiresCorrectToolForDrops().instabreak()),ModCreativeModeTab.SHITPOST_TAB);
+        () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f)
+                .requiresCorrectToolForDrops()),ModCreativeModeTab.SHITPOST_TAB);
+
+    public  static final RegistryObject<Block> TENDO_BLOCK = registerBlock("tendo_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(4f)
+                    .requiresCorrectToolForDrops()),ModCreativeModeTab.SHITPOST_TAB);
+    public  static final RegistryObject<Block> WAFFLE_BLOCK = registerBlock("waffle_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE).strength(0f)
+                    .requiresCorrectToolForDrops().instabreak()),ModCreativeModeTab.SHITPOST_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
